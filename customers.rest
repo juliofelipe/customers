@@ -1,0 +1,33 @@
+### Create Customer
+POST http://127.0.0.1:5000/customers HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Julio",
+    "birth_date": "22-03-1990"
+}
+
+### List all customers
+GET http://127.0.0.1:5000/customers HTTP/1.1
+content-type: application/json
+
+### Get a single customer
+GET http://127.0.0.1:5000/customers/2 HTTP/1.1
+content-type: application/json
+
+### Delete a customer
+DELETE http://127.0.0.1:5000/customers/2 HTTP/1.1
+content-type: application/json
+
+### Change Customer
+PUT http://127.0.0.1:5000/customers/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Helena",
+    "birth_date": "23-03-2000"
+}
+
+###
+GET http://127.0.0.1:5000/customers?month=3&day=23 HTTP/1.1
+content-type: application/json
